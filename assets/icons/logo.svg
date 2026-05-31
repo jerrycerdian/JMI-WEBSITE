@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="32" y1="24" x2="224" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A16"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="40" y1="40" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B100FF"/>
+      <stop offset="0.45" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#FF7A18"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="256" height="256" rx="44" fill="url(#bg)"/>
+  <path d="M34 62L62 34H194L222 62V194L194 222H62L34 194V62Z" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <path d="M72 88H104V160C104 186 88 200 62 200C54 200 47 199 40 197L46 170C51 171 56 172 61 172C74 172 80 165 80 151V88H72Z" fill="url(#g1)" filter="url(#glow)"/>
+
+  <path d="M118 88H150L166 132L182 88H214V200H187V142L171 178H161L145 142V200H118V88Z" fill="url(#g1)" filter="url(#glow)"/>
+
+  <path d="M220 88H193V200H220V88Z" fill="url(#g1)" filter="url(#glow)"/>
+
+  <path d="M54 64H202" stroke="rgba(255,255,255,0.16)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M54 192H202" stroke="rgba(255,255,255,0.10)" stroke-width="4" stroke-linecap="round"/>
+</svg>
